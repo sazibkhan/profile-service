@@ -1,0 +1,13 @@
+### ProfileController::saveProfile
+POST http://localhost:8081/api/v1/profiles
+Content-Type: application/json
+Accept: application/json
+
+
+{
+  "name": "Sazib Khan",
+  "designation": "Software Engineer",
+  "address": "Dhaka"
+}
+
+

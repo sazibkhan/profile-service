@@ -17,7 +17,7 @@ public class ProfileController {
     private  final ProfileService profileService ;
 
     @PostMapping
-    public RestResponse createNewProfile(@RequestBody ProfileDTO profileDTO ) {
+    public RestResponse saveProfile(@RequestBody ProfileDTO profileDTO ) {
         profileService.createProfile(profileDTO);
         return ResponseFactory.saveSuccess();
     }
