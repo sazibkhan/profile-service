@@ -1,4 +1,4 @@
-package com.nagalay.profileservice.dto.request;
+package com.sazibkhan.profileservice.dto.request;
 
 import lombok.Data;
 

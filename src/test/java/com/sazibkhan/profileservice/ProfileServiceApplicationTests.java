@@ -1,4 +1,4 @@
-package com.nagalay.profileservice;
+package com.sazibkhan.profileservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

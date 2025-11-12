@@ -1,10 +1,10 @@
-package com.nagalay.profileservice.controller;
+package com.sazibkhan.profileservice.controller;
 
-import com.nagalay.profileservice.common.ResponseFactory;
-import com.nagalay.profileservice.dto.RestResponse;
-import com.nagalay.profileservice.dto.request.ProfileDTO;
-import com.nagalay.profileservice.dto.response.ProfileRest;
-import com.nagalay.profileservice.service.ProfileService;
+import com.sazibkhan.profileservice.common.ResponseFactory;
+import com.sazibkhan.profileservice.dto.RestResponse;
+import com.sazibkhan.profileservice.dto.request.ProfileDTO;
+import com.sazibkhan.profileservice.dto.response.ProfileRest;
+import com.sazibkhan.profileservice.service.ProfileService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +18,7 @@ public class ProfileController {
 
     @PostMapping
     public RestResponse saveProfile(@RequestBody ProfileDTO profileDTO ) {
-        profileService.createProfile(profileDTO);
+        profileService.saveProfile(profileDTO);
         return ResponseFactory.saveSuccess();
     }
 

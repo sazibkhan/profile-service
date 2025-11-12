@@ -1,9 +1,9 @@
-package com.nagalay.profileservice.service;
+package com.sazibkhan.profileservice.service;
 
-import com.nagalay.profileservice.dto.request.ProfileDTO;
-import com.nagalay.profileservice.dto.response.ProfileRest;
-import com.nagalay.profileservice.entity.ProfileEntity;
-import com.nagalay.profileservice.repository.ProfileRepository;
+import com.sazibkhan.profileservice.dto.request.ProfileDTO;
+import com.sazibkhan.profileservice.dto.response.ProfileRest;
+import com.sazibkhan.profileservice.entity.ProfileEntity;
+import com.sazibkhan.profileservice.repository.ProfileRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,8 @@ public class ProfileService {
     private final EntityValidationService entityValidationService;
 
 
-    public void createProfile(ProfileDTO profileDTO) {
+    public void saveProfile(ProfileDTO profileDTO) {
+
         var profileEntity=new ProfileEntity();
         BeanUtils.copyProperties(profileDTO,profileEntity);
         profileRepository.saveAndFlush(profileEntity);

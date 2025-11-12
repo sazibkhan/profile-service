@@ -1,4 +1,4 @@
-package com.nagalay.profileservice.dto.response;
+package com.sazibkhan.profileservice.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

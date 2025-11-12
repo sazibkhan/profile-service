@@ -1,6 +1,6 @@
-package com.nagalay.profileservice.repository;
+package com.sazibkhan.profileservice.repository;
 
-import com.nagalay.profileservice.entity.ProfileEntity;
+import com.sazibkhan.profileservice.entity.ProfileEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

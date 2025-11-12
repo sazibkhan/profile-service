@@ -1,7 +1,7 @@
-package com.nagalay.profileservice.common;
+package com.sazibkhan.profileservice.common;
 
-import com.nagalay.profileservice.dto.response.ProfileRest;
-import com.nagalay.profileservice.entity.ProfileEntity;
+import com.sazibkhan.profileservice.dto.response.ProfileRest;
+import com.sazibkhan.profileservice.entity.ProfileEntity;
 import org.springframework.beans.BeanUtils;
 
 public class EntityTransform {

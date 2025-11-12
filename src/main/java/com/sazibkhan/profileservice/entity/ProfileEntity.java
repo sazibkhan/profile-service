@@ -1,4 +1,4 @@
-package com.nagalay.profileservice.entity;
+package com.sazibkhan.profileservice.entity;
 
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;

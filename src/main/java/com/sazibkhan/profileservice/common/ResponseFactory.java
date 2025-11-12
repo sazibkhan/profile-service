@@ -1,7 +1,7 @@
-package com.nagalay.profileservice.common;
+package com.sazibkhan.profileservice.common;
 
 
-import com.nagalay.profileservice.dto.RestResponse;
+import com.sazibkhan.profileservice.dto.RestResponse;
 import org.springframework.http.HttpStatus;
 
 public class ResponseFactory {

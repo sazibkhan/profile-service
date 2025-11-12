@@ -1,6 +1,6 @@
-package com.nagalay.profileservice.service;
-import com.nagalay.profileservice.entity.ProfileEntity;
-import com.nagalay.profileservice.repository.ProfileRepository;
+package com.sazibkhan.profileservice.service;
+import com.sazibkhan.profileservice.entity.ProfileEntity;
+import com.sazibkhan.profileservice.repository.ProfileRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

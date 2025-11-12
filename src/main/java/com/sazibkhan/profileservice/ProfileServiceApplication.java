@@ -1,4 +1,4 @@
-package com.nagalay.profileservice;
+package com.sazibkhan.profileservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
