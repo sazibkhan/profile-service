@@ -3,11 +3,39 @@ POST http://localhost:8081/api/v1/profiles
 Content-Type: application/json
 Accept: application/json
 
-
 {
   "name": "Sazib Khan",
   "designation": "Software Engineer",
   "address": "Dhaka"
 }
+
+### ProfileController::getProfileById
+GET http://localhost:8081/api/v1/profiles/8
+Content-Type: application/json
+Accept: application/json
+
+### ProfileController::getAllProfile
+GET http://localhost:8081/api/v1/profiles
+Content-Type: application/json
+Accept: application/json
+
+### ProfileController::updateProfile
+PUT http://localhost:8081/api/v1/profiles/8
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Nusrat Jahan",
+  "designation": "Freelancer Engineer",
+  "address": "Barishal"
+}
+
+
+### ProfileController::deleteProfile
+DELETE http://localhost:8081/api/v1/profiles/8
+Content-Type: application/json
+Accept: application/json
+
+
 
 

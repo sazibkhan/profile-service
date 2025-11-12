@@ -23,24 +23,24 @@ public class ProfileController {
     }
 
     @GetMapping
-    public RestResponse getProfileList() {
+    public RestResponse getAllProfile() {
         return ResponseFactory.responseData(profileService.getProfileList());
     }
 
     @GetMapping("{id}")
-    public ProfileRest getBrandById(@PathVariable Long id) {
+    public ProfileRest getProfileById(@PathVariable Long id) {
         return profileService.getProfileById(id);
     }
 
     @PutMapping("{id}")
-    public RestResponse updateBrand(@PathVariable Long id, @RequestBody ProfileDTO profileDTO) {
+    public RestResponse updateProfile(@PathVariable Long id, @RequestBody ProfileDTO profileDTO) {
         profileService.updateProfile(id,profileDTO);
         return  ResponseFactory.updateSuccess();
     }
 
     @DeleteMapping("{id}")
     public RestResponse deleteProfile(@PathVariable Long id) {
-        profileService.deleteProfileById(id);
+        profileService.deleteProfile(id);
         return ResponseFactory.deleteSuccess();
     }
 

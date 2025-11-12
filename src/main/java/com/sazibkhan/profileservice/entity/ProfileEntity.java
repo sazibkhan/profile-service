@@ -9,10 +9,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "profiles")
+
 @Data
 @Builder
+@Entity
+@Table(name = "profiles")
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProfileEntity {
@@ -21,15 +22,15 @@ public class ProfileEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+
     @Column(name = "user_name")
     private String name;
 
-    @NotNull
+
     @Column(name = "Designation")
     private String designation;
 
-    @NotNull
+
     @Column(name = "Address")
     private String address;
 

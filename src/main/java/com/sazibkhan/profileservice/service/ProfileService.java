@@ -36,20 +36,23 @@ public class ProfileService {
     }
 
     public ProfileRest getProfileById(Long id) {
-        var response=entityValidationService.validateProfile(id);
-           var profileEntity=new ProfileRest();
+        var profileEntity =entityValidationService.validateProfile(id);
+           var response=new ProfileRest();
            BeanUtils.copyProperties(profileEntity,response);
-        return profileEntity;
+        return response;
     }
+
+
 
     public void updateProfile(Long id, ProfileDTO profileDTO) {
             var profileEntity=entityValidationService.validateProfile(id);
             profileEntity.setName(profileDTO.getName());
             profileEntity.setDesignation(profileDTO.getDesignation());
             profileEntity.setAddress(profileDTO.getAddress());
+            profileRepository.saveAndFlush(profileEntity);
     }
 
-    public void deleteProfileById(Long id) {
+    public void deleteProfile(Long id) {
         var profileEntity=entityValidationService.validateProfile(id);
         profileRepository.deleteById(profileEntity.getId());
 
