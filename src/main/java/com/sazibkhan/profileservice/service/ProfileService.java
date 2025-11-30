@@ -9,6 +9,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -20,7 +21,6 @@ public class ProfileService {
 
 
     public void saveProfile(ProfileDTO profileDTO) {
-
         var profileEntity=new ProfileEntity();
         BeanUtils.copyProperties(profileDTO,profileEntity);
         profileRepository.saveAndFlush(profileEntity);
@@ -43,6 +43,15 @@ public class ProfileService {
     }
 
 
+    public ProfileRest getProfileInformationById(Long id) {
+        ProfileEntity profile = entityValidationService.validateProfile(id);
+
+        return ProfileRest.builder()
+                .name(profile.getName())
+                .build();
+    }
+
+
 
     public void updateProfile(Long id, ProfileDTO profileDTO) {
             var profileEntity=entityValidationService.validateProfile(id);
@@ -55,6 +64,5 @@ public class ProfileService {
     public void deleteProfile(Long id) {
         var profileEntity=entityValidationService.validateProfile(id);
         profileRepository.deleteById(profileEntity.getId());
-
     }
 }

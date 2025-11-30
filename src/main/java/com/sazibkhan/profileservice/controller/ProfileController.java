@@ -32,6 +32,16 @@ public class ProfileController {
         return profileService.getProfileById(id);
     }
 
+
+    @GetMapping("info/{id}")
+    public ProfileRest getProfileInformationById(@PathVariable Long id) {
+        return profileService.getProfileInformationById(id);
+    }
+
+
+
+
+
     @PutMapping("{id}")
     public RestResponse updateProfile(@PathVariable Long id, @RequestBody ProfileDTO profileDTO) {
         profileService.updateProfile(id,profileDTO);
