@@ -9,6 +9,12 @@ Accept: application/json
   "address": "Dhaka"
 }
 
+### ProfileController::getAllProfile
+GET http://localhost:8081/api/v1/profiles
+Content-Type: application/json
+Accept: application/json
+
+
 ### ProfileController::getProfileById
 GET http://localhost:8081/api/v1/profiles/9
 Content-Type: application/json
@@ -17,11 +23,6 @@ Accept: application/json
 
 ### ProfileController::getProfileInformationById
 GET http://localhost:8081/api/v1/profiles/info/9
-Content-Type: application/json
-Accept: application/json
-
-### ProfileController::getAllProfile
-GET http://localhost:8081/api/v1/profiles
 Content-Type: application/json
 Accept: application/json
 
