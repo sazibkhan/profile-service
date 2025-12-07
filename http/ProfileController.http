@@ -31,7 +31,7 @@ Accept: application/json
 
 
 ### ProfileController::updateProfile
-PUT http://localhost:8081/api/v1/profiles/8
+PUT http://localhost:8081/api/v1/profiles/9
 Content-Type: application/json
 Accept: application/json
 
